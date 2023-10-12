@@ -1,0 +1,74 @@
+---
+title: "Open Reliable and Transparent Science"
+author: "I. Bartomeus"
+format: revealjs
+editor: visual
+---
+
+## Open Science is hard
+
+> Open, reliable and transparent science is a path, not and end point.
+>
+> "Caminante, no hay camino, se hace camino al andar." Machado et al 1912.
+
+## My path
+
+-   It took me 10 years to approach something I am comfortable calling ORT science.
+
+-   Work iteratively
+
+-   We stand on the shoulders of giants such as [rOpenSci](https://ropensci.org/) and Paco Rodriguez.
+
+## Open Data
+
+-   Collecting:
+
+    -   Collect blind
+
+    -   Use structured sheets
+
+    -   Implement checkpoints and sanity checks
+
+    -   Use tidy data structures
+
+    -   Never edit the master file
+
+    -   Metadata (Data spice)
+
+## Open Analysis
+
+-   Script everything (specially data cleaning - Plan ahead!)
+
+-   Use version control (e.g. Github)
+
+-   Use a ReadMe file, a nice repo structure and maybe a make file.
+
+-   Functionalize your code
+
+-   Unit testing
+
+-   Defensive programming
+
+-   Track software versions (Renv)
+
+## Writing
+
+-   Version control (Git (Rmd), Overleaf (LATEX), Gschoolar)
+
+## Publishing
+
+-   Choose a licence
+
+-   Get a DOI
+
+-   Think on versions (Releases, DOI, News.md)
+
+-   Automate Data -\> Analysis -\> Publication (Github actions)
+
+## Conclusions
+
+-   It's hard work - Ensure to claim the credit you deserve
+
+-   You are more exposed - You faults will be seen as honest
+
+-   New tools and standards emerge every day - Work iteraltively and strive to do better, not to do it perfect.
