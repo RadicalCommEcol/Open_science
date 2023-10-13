@@ -338,58 +338,132 @@ I. Bartomeus
 <section id="open-science-is-hard" class="slide level2">
 <h2>Open Science is hard</h2>
 <blockquote>
-<p>Open, reliable and transparent science is a path, not and end point.</p>
-<p>“Caminante, no hay camino, se hace camino al andar.” Machado et al 1912.</p>
+<p>“Caminante, no hay camino, se hace camino al andar” Machado et al.&nbsp;1912 probably referring to open science</p>
 </blockquote>
+<p>Open, reliable and transparent science is a path, not and end point.</p>
 </section>
 <section id="my-path" class="slide level2">
 <h2>My path</h2>
 <ul>
-<li><p>It took me 10 years to approach something I am comfortable calling ORT science.</p></li>
-<li><p>Work iteratively</p></li>
-<li><p>We stand on the shoulders of giants such as <a href="https://ropensci.org/">rOpenSci</a> and Paco Rodriguez.</p></li>
+<li><p>It took me 10 years to approach something I am comfortable calling Open Reliable Transparent science.</p>
+<p><img data-src="Images/Plos_example.png"></p>
+<p>My first shared code back in 2013</p></li>
+</ul>
+</section>
+<section id="my-path-1" class="slide level2">
+<h2>My path</h2>
+<ul>
+<li><p>Work iteratively. One step at a time.</p></li>
+<li><p>We stand on the shoulders of giants such as <a href="https://ropensci.org/">rOpenSci</a> and <a href="https://github.com/Pakillo">Paco Rodriguez</a> (or you don’t need to walk this path alone, find your community)</p></li>
 </ul>
 </section>
 <section id="open-data" class="slide level2">
 <h2>Open Data</h2>
 <ul>
-<li><p>Collecting:</p>
+<li><p>Data collecting:</p>
 <ul>
-<li><p>Collect blind</p></li>
-<li><p>Use structured sheets</p></li>
-<li><p>Implement checkpoints and sanity checks</p></li>
-<li><p>Use tidy data structures</p></li>
-<li><p>Never edit the master file</p></li>
-<li><p>Metadata (Data spice)</p></li>
+<li><p>Collect “double-blind” when possible</p></li>
+<li><p>Use structured sheets to collect data</p></li>
+<li><p>Double labeling of samples when possible</p></li>
+<li><p>Standardize coding (4_NitrogenPhosphurous &gt; 4NP &gt; 4)</p></li>
+<li><p>Keep the link between physical and digital world</p></li>
+<li><p>Remember, Excel is a (dangerous) data entry program, nothing else</p></li>
 </ul></li>
 </ul>
 </section>
+<section id="open-data-1" class="slide level2">
+<h2>Open Data</h2>
+<ul>
+<li><p>Data processing:</p>
+<ul>
+<li><p>Never edit the master file</p></li>
+<li><p>Use <a href="http://vita.had.co.nz/papers/tidy-data.pdf">tidy</a> data structures and plain, standard and open formats (e.g.&nbsp;csv)</p></li>
+<li><p>Implement checkpoints and sanity checks</p>
+<ul>
+<li>Check impossible values vs improbable values</li>
+</ul></li>
+</ul></li>
+<li><p>Metadata (<a href="https://cran.r-project.org/web/packages/dataspice/vignettes/overview.html">Dataspice</a>: creates computer (JSON, EML) and human readable (html) metadata)</p></li>
+</ul>
+</section>
+<section id="metadata" class="slide level2">
+<h2>Metadata</h2>
+
+<img data-src="Images/Iberian_Bees.png" class="r-stretch"></section>
 <section id="open-analysis" class="slide level2">
 <h2>Open Analysis</h2>
 <ul>
-<li><p>Script everything (specially data cleaning - Plan ahead!)</p></li>
-<li><p>Use version control (e.g.&nbsp;Github)</p></li>
-<li><p>Use a ReadMe file, a nice repo structure and maybe a make file.</p></li>
-<li><p>Functionalize your code</p></li>
-<li><p>Unit testing</p></li>
-<li><p>Defensive programming</p></li>
-<li><p>Track software versions (Renv)</p></li>
+<li><p>Script everything (specially data cleaning - Plan ahead!)</p>
+<p><img data-src="Images/plan_accordingly.png" width="996"></p></li>
+</ul>
+</section>
+<section id="open-analysis-1" class="slide level2">
+<h2>Open Analysis</h2>
+<ul>
+<li><p>You can’t reproduce… if you don’t understand where a number came from.</p></li>
+<li><p>You can’t reproduce… what you don’t remember. And trust me: you won’t.</p></li>
+<li><p>You can’t reproduce… what you’ve lost. What if you need access to a file as it existed 1, 10, or 100, or 1000 days ago? - incremental back up (Git, Dropbox, Time machine…)</p></li>
+</ul>
+</section>
+<section id="open-analysis-2" class="slide level2">
+<h2>Open Analysis</h2>
+<ul>
+<li><p>Use version control (e.g.&nbsp;Github):</p>
+<ul>
+<li>R and github (https://<a href="https://happygitwithr.com/">happygitwithr</a>.com/)</li>
+</ul></li>
+<li><p>Use a ReadMe file, and a nice repo structure.</p>
+<p><img data-src="Images/Lincx_example.png"></p></li>
+</ul>
+</section>
+<section id="open-analysis-3" class="slide level2">
+<h2>Open Analysis</h2>
+<ul>
+<li><p>Unit testing (<a href="https://testthat.r-lib.org/">testthat</a>)</p></li>
+<li><p>Defensive programming (<a href="http://adv-r.had.co.nz/Exceptions-Debugging.html#defensive-programming">examples</a>) and maybe functionalize your code</p></li>
+<li><p>Track software versions (<a href="https://rstudio.github.io/renv/articles/renv.html">Renv</a>)</p></li>
 </ul>
 </section>
 <section id="writing" class="slide level2">
 <h2>Writing</h2>
 <ul>
-<li>Version control (Git (Rmd), Overleaf (LATEX), Gschoolar)</li>
+<li>Version control
+<ul>
+<li><p>Github (Markdown) -&gt; allows executing text and code altogether!</p></li>
+<li><p>Overleaf (LATEX)</p></li>
+<li><p>G-Docs</p></li>
+<li><p>etc…</p></li>
+</ul></li>
 </ul>
 </section>
 <section id="publishing" class="slide level2">
 <h2>Publishing</h2>
 <ul>
-<li><p>Choose a licence</p></li>
-<li><p>Get a DOI</p></li>
-<li><p>Think on versions (Releases, DOI, News.md)</p></li>
-<li><p>Automate Data -&gt; Analysis -&gt; Publication (Github actions)</p></li>
+<li><p><a href="https://choosealicense.com/">Choose a licence</a></p></li>
+<li><p>Get a DOI (e.g.&nbsp;<a href="https://zenodo.org/">Zenodo</a>, but also Figshare, …)</p></li>
+<li><p>Think on versions (v.0.1, v.0.2)</p>
+<ul>
+<li><p>Github Releases preserve DOI via Zenodo</p></li>
+<li><p>Think on adding a News.md</p></li>
+</ul></li>
+<li><p>Explain how to contribute (e.g.&nbsp;Github issues)</p></li>
+<li><p>Automate the “Data -&gt; Analysis -&gt; Publication” workflow</p>
+<ul>
+<li>Github actions e.g.&nbsp;<a href="https://github.com/ibartomeus/CropPollinationModels" class="uri">https://github.com/ibartomeus/CropPollinationModels</a></li>
+</ul></li>
 </ul>
+</section>
+<section id="the-perfect-repo" class="slide level2">
+<h2>The perfect repo:</h2>
+<p><code>Readme.md</code> with DOI, version, file structure, etc...</p>
+<p><code>/Data</code></p>
+<p><code>/Analysis</code></p>
+<p><code>/Manuscript</code></p>
+<p><code>LICENCE</code></p>
+<p><code>testthat</code></p>
+<p><code>News.md</code></p>
+<p><code>Metadata/</code></p>
+<p><code>Renv/</code></p>
 </section>
 <section id="conclusions" class="slide level2">
 <h2>Conclusions</h2>

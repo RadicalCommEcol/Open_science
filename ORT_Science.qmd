@@ -7,68 +7,143 @@ editor: visual
 
 ## Open Science is hard
 
-> Open, reliable and transparent science is a path, not and end point.
->
-> "Caminante, no hay camino, se hace camino al andar." Machado et al 1912.
+> "Caminante, no hay camino, se hace camino al andar" Machado et al. 1912 probably referring to open science
+
+Open, reliable and transparent science is a path, not and end point.
 
 ## My path
 
--   It took me 10 years to approach something I am comfortable calling ORT science.
+-   It took me 10 years to approach something I am comfortable calling Open Reliable Transparent science.
 
--   Work iteratively
+    ![](Images/Plos_example.png)
 
--   We stand on the shoulders of giants such as [rOpenSci](https://ropensci.org/) and Paco Rodriguez.
+    My first shared code back in 2013
+
+## My path
+
+-   Work iteratively. One step at a time.
+
+-   We stand on the shoulders of giants such as [rOpenSci](https://ropensci.org/) and [Paco Rodriguez](https://github.com/Pakillo) (or you don't need to walk this path alone, find your community)
 
 ## Open Data
 
--   Collecting:
+-   Data collecting:
 
-    -   Collect blind
+    -   Collect "double-blind" when possible
 
-    -   Use structured sheets
+    -   Use structured sheets to collect data
 
-    -   Implement checkpoints and sanity checks
+    -   Double labeling of samples when possible
 
-    -   Use tidy data structures
+    -   Standardize coding (4_NitrogenPhosphurous \> 4NP \> 4)
+
+    -   Keep the link between physical and digital world
+
+    -   Remember, Excel is a (dangerous) data entry program, nothing else
+
+## Open Data
+
+-   Data processing:
 
     -   Never edit the master file
 
-    -   Metadata (Data spice)
+    -   Use [tidy](http://vita.had.co.nz/papers/tidy-data.pdf) data structures and plain, standard and open formats (e.g. csv)
+
+    -   Implement checkpoints and sanity checks
+
+        -   Check impossible values vs improbable values
+
+-   Metadata ([Dataspice](https://cran.r-project.org/web/packages/dataspice/vignettes/overview.html): creates computer (JSON, EML) and human readable (html) metadata)
+
+## Metadata
+
+![](Images/Iberian_Bees.png)
 
 ## Open Analysis
 
 -   Script everything (specially data cleaning - Plan ahead!)
 
--   Use version control (e.g. Github)
+    ![](Images/plan_accordingly.png){width="996"}
 
--   Use a ReadMe file, a nice repo structure and maybe a make file.
+## Open Analysis
 
--   Functionalize your code
+-   You can't reproduce... if you don't understand where a number came from.
 
--   Unit testing
+-   You can't reproduce... what you don't remember. And trust me: you won't.
 
--   Defensive programming
+-   You can't reproduce... what you've lost. What if you need access to a file as it existed 1, 10, or 100, or 1000 days ago? - incremental back up (Git, Dropbox, Time machine...)
 
--   Track software versions (Renv)
+## Open Analysis
+
+-   Use version control (e.g. Github):
+
+    -   R and github (https://[happygitwithr](https://happygitwithr.com/).com/)
+
+-   Use a ReadMe file, and a nice repo structure.
+
+    ![](Images/Lincx_example.png)
+
+## Open Analysis
+
+-   Unit testing ([testthat](https://testthat.r-lib.org/))
+
+-   Defensive programming ([examples](http://adv-r.had.co.nz/Exceptions-Debugging.html#defensive-programming)) and maybe functionalize your code
+
+-   Track software versions ([Renv](https://rstudio.github.io/renv/articles/renv.html))
 
 ## Writing
 
--   Version control (Git (Rmd), Overleaf (LATEX), Gschoolar)
+-   Version control
+    -   Github (Markdown) -\> allows executing text and code altogether!
+
+    -   Overleaf (LATEX)
+
+    -   G-Docs
+
+    -   etc...
 
 ## Publishing
 
--   Choose a licence
+-   [Choose a licence](https://choosealicense.com/)
 
--   Get a DOI
+-   Get a DOI (e.g. [Zenodo](https://zenodo.org/), but also Figshare, ...)
 
--   Think on versions (Releases, DOI, News.md)
+-   Think on versions (v.0.1, v.0.2)
 
--   Automate Data -\> Analysis -\> Publication (Github actions)
+    -   Github Releases preserve DOI via Zenodo
+
+    -   Think on adding a News.md
+
+-   Explain how to contribute (e.g. Github issues)
+
+-   Automate the "Data -\> Analysis -\> Publication" workflow
+
+    -   Github actions e.g. <https://github.com/ibartomeus/CropPollinationModels>
+
+## The perfect repo: 
+
+`Readme.md` with DOI, version, file structure, etc\...
+
+`/Data`
+
+`/Analysis`
+
+`/Manuscript`
+
+`LICENCE`
+
+`testthat`
+
+`News.md`
+
+`Metadata/`
+
+`Renv/`
 
 ## Conclusions
 
--   It's hard work - Ensure to claim the credit you deserve
+-   It's hard work -\> Ensure to claim the credit you deserve
 
--   You are more exposed - You faults will be seen as honest
+-   You are more exposed -\> You faults will be seen as honest
 
--   New tools and standards emerge every day - Work iteraltively and strive to do better, not to do it perfect.
+-   New tools and standards emerge every day -\> Work iteraltively and strive to do better, not to do it perfect.
