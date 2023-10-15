@@ -85,11 +85,13 @@ Open, reliable and transparent science is a path, not and end point.
 
 ## Open Analysis
 
--   Unit testing ([testthat](https://testthat.r-lib.org/))
-
 -   Defensive programming ([examples](http://adv-r.had.co.nz/Exceptions-Debugging.html#defensive-programming)) and maybe functionalize your code
 
 -   Track software versions ([Renv](https://rstudio.github.io/renv/articles/renv.html))
+
+-   Code review / Pair programming
+
+-   Unit testing ([testthat](https://testthat.r-lib.org/))
 
 ## Writing
 
@@ -120,11 +122,11 @@ Open, reliable and transparent science is a path, not and end point.
 
     -   Github actions e.g. <https://github.com/ibartomeus/CropPollinationModels>
 
-## The perfect repo: 
+## The perfect repo:
 
-`Readme.md` with DOI, version, file structure, etc\...
+`Readme.md` with DOI, version, file description, relevant info, etc\...
 
-`/Data`
+`/Data` with raw, clean and the relevant scripts.
 
 `/Analysis`
 
